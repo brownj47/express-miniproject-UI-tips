@@ -28,7 +28,7 @@ app.get('/feedback', (req, res) =>
 );
 
 // GET Route for 404 page
-app.get('/feedback', (req, res) =>
+app.get('/**', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/pages/404.html'))
 );
 
